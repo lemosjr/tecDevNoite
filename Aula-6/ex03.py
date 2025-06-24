@@ -5,7 +5,7 @@ nota3 = float(input("Digite a terceira nota:"))
 nota4 = float(input("Digite a quarta nota:"))
 
 media = (nota1 + nota2 + nota3 + nota4)/4
-if (media >= 7):
+if (media >= 7 and media <= 10):
     print(
         f'''
 ------------------------------------------------      
@@ -29,12 +29,12 @@ elif(media > 5 and media < 7):
                     3ª: {nota3}  
                     4ª: {nota4}
                 Média do aluno: {media}
-            VOCÊ FOI APROVADO!!!!!!!!!!!
+            VOCÊ ESTÁ DE RECUPERAÇÃO!!!!!!!!!!!
     -------------------------------------------------      
         '''
         )
 
-else:   
+elif (media >= 0 and media <= 4):   
     print(f'''
     ------------------------------------------------      
                 notas do aluno: 
@@ -46,3 +46,6 @@ else:
         Você foi REPROVADO!!!!!!!!!!!!
     -------------------------------------------------      
         ''')
+    
+else:
+    print("Média inválida")
