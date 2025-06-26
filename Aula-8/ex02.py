@@ -1,30 +1,47 @@
-num1 = int(input("Digite o primeiro número:"))
-num2 = int(input("Digite o segundo número:"))
-num3 = int(input("Digite o terceiro número:"))
+#Cenário 2 - Crie um programa que pede ao usuário 3 números inteiros. Exiba na tela os três números em ordem decrescente.
 
-if num1 >= num2 and num1 >= num3:
-    primeiro = num1
-    if num2 >= num3:
-        segundo = num2
-        terceiro = num3
+n1 = int(input("Digite o primeiro número: "))
+n2 = int(input("Digite o segundo número: "))
+n3 = int(input("Digite o terceiro número: "))
+
+# Estratégia 1
+# if n1 >= n2 and n1 >= n3 and n2 >= n3:
+#     print(f"A ordem é: {n1} > {n2} > {n3}")
+# elif n1 >= n2 and n1 >= n3 and n3 >= n2:
+#     print(f"A ordem é: {n1} > {n3} > {n2}")
+
+# Estratégia 2
+if n1 >= n2 and n1 >= n3:
+    primeiro = n1
+
+    if n2 >= n3:
+        segundo = n2
+        terceiro = n3
     else:
-        segundo = num3
-        terceiro = num2
-elif num2 >= num1 and num2 >= num3:
-    primeiro = num2
-    if num1 >= num3:
-        segundo = num1
-        terceiro = num3
-    else:
-        segundo = num3
-        terceiro = num1
+        segundo = n3
+        terceiro = n2
+
+elif n2 >= n1 and n2 >= n3:
+    primeiro = n2
+
+    if n1 >= n3:
+        segundo = n1
+        terceiro = n3
+    else: 
+        segundo = n3
+        terceiro = n1
 else:
-    primeiro = num3
-    if num1 >= num2:
-        segundo = num1
-        terceiro = num2
+    primeiro = n3
+
+    if n1 >= n2:
+        segundo = n1
+        terceiro = n2
     else:
-        segundo = num2
-        terceiro = num1
-        
-print(f"A ordem decrescente do números é {terceiro}, {segundo} e {primeiro}")
+        segundo = n2
+        terceiro = n1
+
+print(f"A ordem decrescente dos números é: {primeiro} > {segundo} > {terceiro}")
+
+# numeros = [n1,n2,n3]
+# numeros.sort(reverse=True)
+# print(f"A ordem decrescente dos números é: {numeros}")
