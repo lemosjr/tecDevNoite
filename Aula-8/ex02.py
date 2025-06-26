@@ -1,10 +1,30 @@
-num = int(input("Digite o primeiro número:"))
+num1 = int(input("Digite o primeiro número:"))
 num2 = int(input("Digite o segundo número:"))
 num3 = int(input("Digite o terceiro número:"))
 
-if (num >= num2 and num >= num3) and (num2 >= num3):
-    print(f"Ordem decrescente {num3}, {num2} e {num}")
-elif (num2 >= num and num2 >= num3) and (num >= num3):
-    print(f"Ordem decrescente {num2}, {num} e {num3}")
+if num1 >= num2 and num1 >= num3:
+    primeiro = num1
+    if num2 >= num3:
+        segundo = num2
+        terceiro = num3
+    else:
+        segundo = num3
+        terceiro = num2
+elif num2 >= num1 and num2 >= num3:
+    primeiro = num2
+    if num1 >= num3:
+        segundo = num1
+        terceiro = num3
+    else:
+        segundo = num3
+        terceiro = num1
 else:
-    print(f"Ordem decrescente {num}, {num2} e {num3}")
+    primeiro = num3
+    if num1 >= num2:
+        segundo = num1
+        terceiro = num2
+    else:
+        segundo = num2
+        terceiro = num1
+        
+print(f"A ordem decrescente do números é {terceiro}, {segundo} e {primeiro}")
