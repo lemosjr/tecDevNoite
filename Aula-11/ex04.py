@@ -1,8 +1,7 @@
 while True:
+    operacao = input("Digite a operação desejada (+, -, *, /) ou 'sair' para encerrar: ")
     num = float(input("Digite um número:"))
     num2 = float(input("Digite outro número:"))
-
-    operacao = input("Digite a operação desejada (+, -, *, /) ou 'sair' para encerrar: ")
     
     if operacao == 'sair':
         print("Encerrando o programa.")
