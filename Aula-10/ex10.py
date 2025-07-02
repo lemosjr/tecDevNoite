@@ -1,8 +1,7 @@
-pot = 0
-base = int(input("Digite a base:"))
-expo = int(input("Digite o expoente:"))
-
-for i in range(1):
-    pot = (base)**expo
+expo = int(input("Digite a base:"))
+base = int(input("Digite o expoente:"))
+pot = 1
+for i in range(base):
+    pot *= expo   
     print(pot)
     
