@@ -14,4 +14,17 @@
 # ...
 
 # 50 - R$ 99.50
-
+menu = int(input("Digite 1 para gerar a tabela de preços ou 2 para sair: "))
+while True:
+    if menu == 1:
+        print("Lojas Quase Dois - Tabela de preços")
+        for i in range(1, 51):
+            preco = i * 1.99
+            print(f"{i} - R$ {preco:.2f}")
+        break
+    elif menu == 2:
+        print("Saindo do programa.")
+        break
+    else:
+        print("Opção inválida. Tente novamente.")
+        menu = int(input("Digite 1 para gerar a tabela de preços ou 2 para sair: "))
