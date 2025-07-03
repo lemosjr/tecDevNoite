@@ -18,11 +18,10 @@ while True:
         
         for i in range(eleitores):
             voto = int(input(f"Eleitor {i + 1}, digite seu voto (1, 2 ou 3): "))
-            while voto not in (candidato1, candidato2, candidato3):
+            if voto not in (candidato1, candidato2, candidato3):
                 print("Voto inválido. Tente novamente.")
                 voto = int(input(f"Eleitor {i + 1}, digite seu voto (1, 2 ou 3): "))
-            
-            if voto == candidato1:
+            elif voto == candidato1:
                 votos_candidato1 += 1
             elif voto == candidato2:
                 votos_candidato2 += 1
