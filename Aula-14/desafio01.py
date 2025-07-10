@@ -1,0 +1,9 @@
+# Desafio 1:
+# Crie uma lista de números inteiros e implemente uma código que substitua todos os números pares por 0
+
+lista = [1,2,3,4,5,6,7,8,9,10]
+
+for i in lista:
+    if lista[i] % 2 == 0:
+        lista.insert(i, 0)
+    print(lista)
