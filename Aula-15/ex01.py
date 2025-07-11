@@ -1,15 +1,14 @@
-temperatura = []
-tempAcima = []
-media = 0
-for i in range(3):
-    temperatura.append(int(input("Digite uma temperatura:")))
-    media = sum(temperatura) / len(temperatura)
+lista = []
+acimaDaMedia = []
 
-print(temperatura)
+for i in range(10):
+    lista.append(int(input("Digite uma temperatura:")))
+    
+media = sum(lista) / len(lista)
 
-for i in range(len(temperatura)):
+for i in lista:
     if i > media:
-        tempAcima.append(i)
-        
-print(temperatura)
-print(tempAcima)
+        acimaDaMedia.append(i)
+
+print(acimaDaMedia)
+
