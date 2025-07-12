@@ -1,0 +1,51 @@
+1. Peça ao usuário uma lista de 10 temperaturas,
+crie uma nova lista apenas com as temperaturas acima do valor da média.
+
+2. Crie um programa em Python que simule um sistema de chamada de senhas em um laboratório.
+O programa deve apresentar um menu com três opções: criar nova senha,
+chamar a próxima senha e desistir (encerrar o programa).
+Ao escolher a opção de criar nova senha, o programa gera uma nova senha,
+que será adicionada ao final de uma lista.
+Ao escolher a opção de chamar próxima senha, o programa deve remover e exibir a primeira senha da lista,
+simulando o atendimento em ordem de chegada. A opção de desistir encerra o programa.
+Após cada ação realizada, o programa deve exibir a lista atualizada de senhas.
+O funcionamento do programa deve manter a ordem das senhas conforme foram inseridas,
+garantindo que a primeira a ser chamada sempre seja a que entrou primeiro.
+
+3. Durante uma semana, foram registradas as temperaturas corporais de um paciente:
+                [36.8, 37.5, 38.2, 37.0, 36.5, 39.1, 38.6]  
+Crie um programa que exiba apenas as temperaturas consideradas febre (acima de 37.5ºC).
+
+4. Utilizando listas faça um programa que faça 5 perguntas para uma pessoa sobre um crime.
+As perguntas são:
+"Telefonou para a vítima?"
+"Esteve no local do crime?"
+"Mora perto da vítima?"
+"Devia para a vítima?"
+"Já trabalhou com a vítima?"
+O programa deve no final emitir uma classificação sobre a participação da pessoa no crime.
+Se a pessoa responder positivamente a 2 questões ela deve ser classificada como "Suspeita",
+entre 3 e 4 como "Cúmplice" e 5 como "Assassino".
+Caso contrário, ele será classificado como "Inocente".
+
+5. Faça um programa que simule um lançamento de dados.
+Lance o dado 100 vezes e armazene os resultados em uma Lista.
+Depois, mostre quantas vezes cada valor foi conseguido.
+Dica: use um listade contadores (1-6) e uma função para gerar numeros aleatórios, simulando os lançamentos dos dados.
+
+6. Um técnico em TI precisa organizar os arquivos recentes por nome. 
+Dada a lista ["relatorio.docx", "atendimento.pdf", "planilha.xlsx", "resumo.txt"],
+faça um programa que filtre apenas os arquivos com final .pdf ou .docx.
+
+7. Uma UBS possui um estoque de vacinas com os seguintes lotes (quantidades): [120, 85, 100, 50, 95].
+Crie um programa que remova o lote com menor quantidade e adicione um novo lote com 130 unidades. Mostre o estoque final.
+
+8. Crie um programa para gerenciar os pedidos de uma lanchonete.
+O sistema deve simular um menu onde o atendente pode escolher entre as seguintes opções: 
+adicionar um novo pedido, visualizar todos os pedidos ou finalizar o pedido mais antigo.
+Ao escolher “adicionar pedido”, o atendente deve digitar o nome do cliente junto com o item solicitado 
+(por exemplo: "Ana - X-Burguer"), e essa informação deve ser adicionada à lista de pedidos.
+Ao escolher “visualizar pedidos”, o programa deve exibir todos os pedidos em ordem, da entrada mais antiga à mais recente.
+Já ao escolher “finalizar pedido”, o programa deve remover o primeiro item da lista, simulando que esse pedido foi atendido,
+e exibir qual foi o pedido finalizado. Após cada ação, o programa deve mostrar o estado atualizado da fila de pedidos.
+O sistema deve continuar funcionando até que o atendente escolha a opção de sair do programa.
