@@ -2,6 +2,5 @@
 
 amigos = {"levi":{"nome":'levi', "idade": 22}, "joao pedro":{"nome": 'joao pedro', "idade": 24}, "tales":{"nome": 'tales', "idade": 22}}
 
-for nome in amigos.items():
-    chaves = amigos.keys()
-    print(nome.count(chaves))
+quantidade_amigos = len(amigos)
+print("Quantidade de amigos:", quantidade_amigos)
