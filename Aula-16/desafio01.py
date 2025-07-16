@@ -9,9 +9,28 @@ dicionario_traducao = {
     "thank you": "gracias"
 }
 
-palavra_ingles = input("Digite uma palavra em inglês: ")
+def significado():
+    palavraSig = input("Digite o signifcado da palavra:")
+    for palavraSig in dicionario_traducao.values():
+        for chave, valor in dicionario_traducao.items():
+            if valor == palavraSig:
+                return print(chave)
+            
+        
+            
+def inserir_palavra():
+    palavraNova = input("Digite a nova palavra:")
+    traducao = input("Digite a tradução da palavra digitada:")
+    dicionario_traducao[palavraNova] = traducao
 
-if palavra_ingles in dicionario_traducao:
-    print("A tradução em espanhol é:", dicionario_traducao[palavra_ingles])
-else:
-    print("Palavra não encontrada no dicionário.")
+
+
+def tradutor():
+    palavra_ingles = input("Digite uma palavra em inglês: ")
+
+    if palavra_ingles in dicionario_traducao:
+        print("A tradução em espanhol é:", dicionario_traducao[palavra_ingles])
+    else:
+        print("Palavra não encontrada no dicionário.")
+
+significado()
