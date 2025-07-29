@@ -1,0 +1,19 @@
+Atividade 1: Criação de uma Classe e Objeto
+    Crie uma classe chamada Aluno com atributos nome e matricula. Adicione um método chamado
+    exibir_informacoes que imprime os detalhes do aluno. Crie um objeto dessa classe e chame o método. Crie o
+    método aprovado_reprovado que verifica se o aluno foi ou não aprovado.
+
+
+Atividade 2: Criando e Usando uma Classe
+
+    Crie uma classe chamada Livro com atributos titulo e autor. Adicione um método chamado detalhes
+    que imprime o título e o autor do livro. Crie um objeto dessa classe e chame o método.
+    Crie o método reputação,no qual fala qual a reputação do livro
+
+Atividade 3: Classe Carro
+
+    Crie uma classe chamada Carro com atributos marca e modelo.
+    Adicione um método chamado descrever que imprime a marca e o modelo do carro.
+    Crie dois objetos dessa classe e chame o método.
+    Crie os métodos fechar_porta e metodo abri_porta.
+
