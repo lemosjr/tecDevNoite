@@ -9,16 +9,16 @@ class Aluno:
         self.matricula = matricula
         self.nota = nota
         
-    def __str__(self):
-        return f"{self.nome} - {self.matricula}"      
+    def exibir_informacoes(self):
+        return f"Nome: {self.nome}, Matrícula: {self.matricula}"
     
-    def notas_do_aluno(self):
-        if self.nota >=7 and self.nota<=10:
-            return "Aluno aprovado"
-        elif self.nota < 7 and self.nota >= 0:
-            return "Aluno reprovado"
+    def aprovado_reprovado(self):
+        if self.nota >= 6.0:
+            return "Aprovado"
         else:
-            return "Nota inválida"
-aluno = Aluno('henrique', 245, 8.5)     
-print(aluno)
-print(aluno.notas_do_aluno())
+            return "Reprovado"
+aluno = Aluno('João Silva', '123456', 7.5)
+print(aluno.exibir_informacoes())
+print(aluno.aprovado_reprovado())
+# Nome: João Silva, Matrícula: 123456
+# Aprovado
