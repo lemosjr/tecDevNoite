@@ -1,0 +1,2 @@
+# 6. Você está criando um formulário simples para coletar o nome do usuário.
+# 👉 Faça um programa em Tkinter com uma janela contendo um rótulo (Label) escrito "Digite seu nome:" e uma caixa de texto (Entry) logo abaixo.
