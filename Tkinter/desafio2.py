@@ -10,21 +10,25 @@
 
 import tkinter as tk
 from tkinter import messagebox
+
 def checar_nota():
-    nota = int(entry_nota.get())
-    if nota >= 7:
-        messagebox.showinfo(title="Você passou")
-    elif nota < 7 and nota >= 5:
-        messagebox.showinfo(title="Você está de recuperação")
-    else:
-        messagebox.showinfo(title="Reprovado" message="Voce esta reprovado")
+    try:
+        nota = float(entry_nota.get())
+        if nota >= 7:
+            messagebox.showinfo(title="Aprovado", message="Você foi aprovado!!!")
+        elif nota >= 5:
+            messagebox.showinfo(title="Recuperação", message="Você está de recuperação")
+        else:
+            messagebox.showinfo(title="Reprovado", message="Você está reprovado")
+    except ValueError:
+        messagebox.showerror(title="Erro", message="Digite um valor numérico válido.")
 
 app = tk.Tk()
 app.title("Resultado escolar")
 app.geometry("600x400")
 
-tk.Label(app, text="Digite sua idade:").pack(pady=5)
+tk.Label(app, text="Digite sua nota:").pack(pady=5)
 entry_nota = tk.Entry(app)
 entry_nota.pack(pady=5)
-
-tk.Button(app, text="Verificar", command="a").pack(pady=10)
+tk.Button(app, text="Verificar Resultado", command=checar_nota).pack(pady=20)
+app.mainloop()
